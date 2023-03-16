@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: bg 4s linear infinite;
+  overflow: hidden;
+}
+.slider video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.slider-container {
+}
+.slider-container h1 {
+  margin-bottom: 20px;
+  font-size: 64px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  border-radius: 30px;
+}
+.cta {
+  padding: 10px 80px;
+  border: 1px solid #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.cta:hover {
+  box-shadow: 0 0 3px #fff;
+  background-color: white;
+  color: greenyellow;
+}
+.desc {
+  margin: 30px 0px;
+}
+
+@keyframes bg {
+  0%,
+  100% {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  25% {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  50% {
+    background-color: rgba(0, 255, 0 0.5);
+  }
+  75% {
+    background-color: rgba(0, 0, 255, 0.5);
+  }
+}
